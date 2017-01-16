@@ -1,0 +1,34 @@
+<h1>Circulation</h1>
+<div class="container">
+    <form name="login" novalidate>
+    <div class="row">
+        <div class="col-lg-2" >
+            <label  class="form-control" style="border:none;">User</label>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" name="user" ng-options="user as user.name for user in users track by user.id" ng-model="circ.user">
+            </select>
+        </div>
+        <div class="col-md-7">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2" class="form-control">
+            <label  class="form-control" style="border:none;">Book</label>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" name="book" ng-options="book as book.name for book in books track by book.id" ng-model="circ.book">
+            </select>
+        </div>
+        <div class="col-md-7">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-md-10">
+            <input class="btn btn-primary" type="button" ng-click="issue()" value="Issue">
+        </div>
+    </div>
+    </form>
+</div>

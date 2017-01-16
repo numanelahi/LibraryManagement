@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 button" ui-sref="home.users">
+            <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="col-md-2 button" ui-sref="home.books">
+            <span class="glyphicon glyphicon-book"></span>
+        </div>
+        <div class="col-md-2 button" ui-sref="home.circulation">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+        </div>
+        <div class="col-md-2 button" ng-click="logout()">
+            <span class="glyphicon glyphicon-log-out"></span>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div ui-view></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+

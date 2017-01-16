@@ -1,0 +1,36 @@
+<h1>Add book</h1>
+
+<div class="container">
+    <form name="bookForm">
+    <div class="row">
+        <div class="col-lg-2" >
+            <label for="txtBook" class="form-control" style="border:none;">Name</label>
+        </div>
+        <div class="col-md-5">
+            <input id="txtBook" name="bookName" class="form-control" type="text" ng-model="book.name" ng-required="true">
+        </div>
+        <div class="col-md-5">
+            <span ng-show="bookForm.bookName.$dirty && bookForm.bookName.$error.required" style="color:red;">Field required</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2" class="form-control">
+            <label for="txtAuthor" class="form-control" style="border:none;">Author</label>
+        </div>
+        <div class="col-md-5">
+            <input id="txtAuthor" name="bookAuthor" class="form-control" type="text" ng-model="book.author" ng-required="true">
+        </div>
+        <div class="col-md-3">
+            <span ng-show="bookForm.bookAuthor.$dirty && bookForm.bookAuthor.$error.required" style="color:red;">Field required</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-md-5">
+            <input class="btn btn-primary" type="button" ng-click="addBook()" value="{{btnVal}}" ng-disabled="bookForm.$invalid">
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+    </form>
+</div>

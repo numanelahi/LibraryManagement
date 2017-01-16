@@ -1,0 +1,62 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+div.col-md-4:nth-of-type(2) {
+  background-color: #9acfea;
+  padding: 8px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*div.col-md-2 {
+  text-align: center;
+  background-color: #00b3ee;
+  padding: 20px;
+}*/
+
+/*div.col-md-2:nth-child(2n){
+  background-color: #0f0f0f;
+}
+
+div.col-md-2:nth-last-of-type(1) {
+  background-color: red;
+}*/
+/*
+#main-content {
+  width: 80%;
+  margin: 10px 25%;
+  height: 100%;
+  padding: 4%;
+  position: relative;
+  min-height: 700px;
+  display: inline-block;
+}*/
+
+

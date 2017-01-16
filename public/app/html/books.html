@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-3"><h1>Books</h1></div>
+    <div class="col-md-9">
+        <a ui-sref="home.addBook" class="btn btn-primary" style="float: right; margin-top: 20px">Add Book</a>
+    </div>
+</div>
+<table class="table table-responsive table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>isAvailable</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-repeat="book in books track by $index">
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td><span ng-class='{"glyphicon glyphicon-ok": book.isAvailable, "glyphicon glyphicon-remove": !book.isAvailable}'></span></td>
+        <td>
+            <button class="btn btn-primary" ng-click="removeBook($index)" ng-show="book.isAvailable">Remove</button>
+            <button class="btn btn-primary" ng-click="returnBook()" ng-hide="book.isAvailable">Return</button>
+        </td>
+    </tr>
+</table>
+
