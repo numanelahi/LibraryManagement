@@ -32,9 +32,6 @@ var Transaction = sequelize.define('Transaction', {
     }
 });
 
-/*Transaction.hasOne(User, {as: "User"});
-Transaction.hasOne(Book, {as: "Book"});*/
-
 function getDueDate () {
     var today = new Date();
     today.setDate(today.getDate() + parseInt(10));
